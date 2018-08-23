@@ -13,11 +13,16 @@ public class CalculaMedia {
 
     int i;
     double aux = 0;
+    double maior = 0;
 
     public float calculaMedia(double vetor[]) {
         for (i = 0; i < vetor.length; i++) {
             aux = vetor[i] + aux;
         }
         return (float) (aux / vetor.length);
+    }
+    
+    public float calculaMaior(double vetor[]){
+        return 0;
     }
 }

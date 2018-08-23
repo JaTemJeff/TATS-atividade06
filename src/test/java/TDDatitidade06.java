@@ -49,4 +49,10 @@ public class TDDatitidade06 {
        Assert.assertEquals(10, res, 0.1);
    }
    
+   @Test
+   public void testeMaior(){
+       double vetor[] = {1, 2, 3};
+       double res = media.calculaMaior(vetor);
+       Assert.assertEquals(3, res, 0.1);
+   }
 }

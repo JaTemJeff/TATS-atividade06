@@ -44,9 +44,9 @@ public class TDDatitidade06 {
    
    @Test
    public void testeMedia(){
-       double vetor[] = {5, 5, 5};
+       double vetor[] = {10, 10};
        double res = media.calculaMedia(vetor);
-       Assert.assertEquals(5, res, 0.1);
+       Assert.assertEquals(10, res, 0.1);
    }
    
 }

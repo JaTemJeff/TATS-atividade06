@@ -10,7 +10,14 @@ package com.utfpr.classes;
  * @author Notebook
  */
 public class CalculaMedia {
-    public float calculaMedia(double vetor[]){
-        return 0;
+
+    int i;
+    double aux = 0;
+
+    public float calculaMedia(double vetor[]) {
+        for (i = 0; i < vetor.length; i++) {
+            aux = vetor[i] + aux;
+        }
+        return (float) (aux / vetor.length);
     }
 }

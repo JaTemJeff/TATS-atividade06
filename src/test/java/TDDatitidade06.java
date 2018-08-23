@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import com.utfpr.classes.CalculaMedia;
 import com.utfpr.classes.CalculaMediana;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -19,10 +20,12 @@ import static org.junit.Assert.*;
  */
 public class TDDatitidade06 {
    CalculaMediana mediana;
+   CalculaMedia media;
    
    @Before
    public void inicializa(){
        mediana = new CalculaMediana();
+       media = new CalculaMedia();
    }
    
    @Test
@@ -37,6 +40,13 @@ public class TDDatitidade06 {
        double vetor[] = {1, 2, 3, 4};
        double res = mediana.calculaMediana(vetor);
        Assert.assertEquals(2.5, res, 0.1);
+   }
+   
+   @Test
+   public void testeMedia(){
+       double vetor[] = {5, 5, 5};
+       double res = media.calculaMedia(vetor);
+       Assert.assertEquals(5, res, 0.1);
    }
    
 }

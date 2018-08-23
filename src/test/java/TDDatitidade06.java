@@ -29,8 +29,14 @@ public class TDDatitidade06 {
    public void testeVetorOrdenadoImpar(){
        double vetor[] = {1, 2, 3, 4, 5};
        double res = mediana.calculaMediana(vetor);
-       
        Assert.assertEquals(3, res, 0.1);
+   }
+   
+   @Test 
+   public void testeVetorOrdenadoPar(){
+       double vetor[] = {1, 2, 3, 4};
+       double res = mediana.calculaMediana(vetor);
+       Assert.assertEquals(2.5, res, 0.1);
    }
    
 }

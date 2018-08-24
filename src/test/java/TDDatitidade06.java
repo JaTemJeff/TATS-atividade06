@@ -5,6 +5,7 @@
  */
 
 import com.utfpr.classes.CalculaDesvioPadrao;
+import com.utfpr.classes.CalculaMaioresEMenores;
 import com.utfpr.classes.CalculaMedia;
 import com.utfpr.classes.CalculaMediana;
 import org.junit.Assert;
@@ -19,6 +20,7 @@ public class TDDatitidade06 {
    CalculaMediana mediana;
    CalculaMedia media;
    CalculaDesvioPadrao desvio; 
+   CalculaMaioresEMenores calcula;
    
    @Before
    public void inicializa(){
@@ -80,6 +82,13 @@ public class TDDatitidade06 {
    public void testeCalculaDesvioPadrao(){
        double vetor[] = {1, 2, 3, 4, 1};
        double res = desvio.calculaDesvio(vetor);
+       Assert.assertEquals(1.3038, res, 0.1);
+   }
+   
+   @Test
+   public void testeNMaioresENMenores(){
+       double vetor[] = {1, 2, 3, 4, 1};
+       double res = calcula.calculaMaioresEMenoresValores(2);
        Assert.assertEquals(1.3038, res, 0.1);
    }
 }

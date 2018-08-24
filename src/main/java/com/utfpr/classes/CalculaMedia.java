@@ -23,6 +23,11 @@ public class CalculaMedia {
     }
     
     public float calculaMaior(double vetor[]){
-        return 0;
+        for (i = 0; i < vetor.length; i++) {
+            if(maior < vetor[i]){
+                maior = vetor[i];
+            }
+        }
+        return (float) maior;
     }
 }

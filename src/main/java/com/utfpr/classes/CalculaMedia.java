@@ -51,4 +51,8 @@ public class CalculaMedia {
         }
         return aux;
     }
+
+    public double calculaNumeroDeValoresAbaixoDaMedia(double[] vetor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

@@ -88,7 +88,7 @@ public class TDDatitidade06 {
    @Test
    public void testeNMaioresENMenores(){
        double vetor[] = {1, 2, 3, 4, 1};
-       double res = calcula.calculaMaioresEMenoresValores(2);
-       Assert.assertEquals(1.3038, res, 0.1);
+       double[] res = calcula.calculaMaioresEMenoresValores(2, vetor);
+       Assert.assertEquals(4, res);
    }
 }

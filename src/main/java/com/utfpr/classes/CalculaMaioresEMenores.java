@@ -10,9 +10,13 @@ package com.utfpr.classes;
  * @author Notebook
  */
 public class CalculaMaioresEMenores {
-
-    public double calculaMaioresEMenoresValores(int n) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    CalculaMedia media = new CalculaMedia();
+    double auxMaior;
+    double auxMenor;
+    double[] auxVet;
     
+    int i;
+    public double[] calculaMaioresEMenoresValores(int n, double[] vetor) {
+        return auxVet;
+    }
 }

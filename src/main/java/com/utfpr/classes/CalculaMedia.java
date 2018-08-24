@@ -23,7 +23,7 @@ public class CalculaMedia {
         return (float) (aux / vetor.length);
     }
 
-    public float calculaMaior(double vetor[]) {
+    public double calculaMaior(double vetor[]) {
         for (i = 0; i < vetor.length; i++) {
             if (maior < vetor[i]) {
                 maior = vetor[i];
@@ -32,7 +32,7 @@ public class CalculaMedia {
         return (float) maior;
     }
 
-    public float calculaMenor(double vetor[]) {
+    public double calculaMenor(double vetor[]) {
         for (i = 0; i < vetor.length; i++) {
             if (menor > vetor[i]) {
                 menor = vetor[i];

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TDDatitidade06
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.109 sec <<< FAILURE!
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.094 sec <<< FAILURE!
 testeNMaioresENMenores(TDDatitidade06)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at TDDatitidade06.testeNMaioresENMenores(TDDatitidade06.java:91)

@@ -55,4 +55,11 @@ public class TDDatitidade06 {
        double res = media.calculaMaior(vetor);
        Assert.assertEquals(3, res, 0.1);
    }
+   
+   @Test
+   public void testeMenor(){
+       double vetor[] = {1, 2, 3};
+       double res = media.calculaMenor(vetor);
+       Assert.assertEquals(1, res, 0.1);
+   }
 }

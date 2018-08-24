@@ -14,6 +14,7 @@ public class CalculaMedia {
     int i;
     double aux = 0;
     double maior = 0;
+    double menor = 0;
 
     public float calculaMedia(double vetor[]) {
         for (i = 0; i < vetor.length; i++) {
@@ -29,5 +30,10 @@ public class CalculaMedia {
             }
         }
         return (float) maior;
+    }
+    
+    public float calculaMenor(double vetor[]){
+        
+        return (float) menor;
     }
 }

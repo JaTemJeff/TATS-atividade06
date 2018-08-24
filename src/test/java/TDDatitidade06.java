@@ -80,6 +80,6 @@ public class TDDatitidade06 {
    public void testeCalculaDesvioPadrao(){
        double vetor[] = {1, 2, 3, 4, 1};
        double res = desvio.calculaDesvio(vetor);
-       Assert.assertEquals(3, res, 0.1);
+       Assert.assertEquals(1.3038, res, 0.1);
    }
 }

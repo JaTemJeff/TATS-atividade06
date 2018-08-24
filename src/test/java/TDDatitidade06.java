@@ -4,15 +4,12 @@
  * and open the template in the editor.
  */
 
+import com.utfpr.classes.CalculaDesvioPadrao;
 import com.utfpr.classes.CalculaMedia;
 import com.utfpr.classes.CalculaMediana;
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -21,11 +18,13 @@ import static org.junit.Assert.*;
 public class TDDatitidade06 {
    CalculaMediana mediana;
    CalculaMedia media;
+   CalculaDesvioPadrao desvio; 
    
    @Before
    public void inicializa(){
        mediana = new CalculaMediana();
        media = new CalculaMedia();
+       desvio = new CalculaDesvioPadrao();
    }
    
    @Test
@@ -74,6 +73,13 @@ public class TDDatitidade06 {
    public void testeNumeroDeValoresAbaixoDaMedia(){
        double vetor[] = {1, 2, 3, 4, 1};
        double res = media.calculaNumeroDeValoresAbaixoDaMedia(vetor);
+       Assert.assertEquals(3, res, 0.1);
+   }
+   
+   @Test
+   public void testeCalculaDesvioPadrao(){
+       double vetor[] = {1, 2, 3, 4, 1};
+       double res = desvio.calculaDesvio(vetor);
        Assert.assertEquals(3, res, 0.1);
    }
 }

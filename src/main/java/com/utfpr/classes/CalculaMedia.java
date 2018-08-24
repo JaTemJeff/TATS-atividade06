@@ -22,19 +22,19 @@ public class CalculaMedia {
         }
         return (float) (aux / vetor.length);
     }
-    
-    public float calculaMaior(double vetor[]){
+
+    public float calculaMaior(double vetor[]) {
         for (i = 0; i < vetor.length; i++) {
-            if(maior < vetor[i]){
+            if (maior < vetor[i]) {
                 maior = vetor[i];
             }
         }
         return (float) maior;
     }
-    
-    public float calculaMenor(double vetor[]){
+
+    public float calculaMenor(double vetor[]) {
         for (i = 0; i < vetor.length; i++) {
-            if(menor > vetor[i]){
+            if (menor > vetor[i]) {
                 menor = vetor[i];
             }
         }
@@ -45,7 +45,7 @@ public class CalculaMedia {
         maior = calculaMedia(vetor);
         aux = 0;
         for (i = 0; i < vetor.length; i++) {
-            if(maior < vetor[i]){
+            if (maior < vetor[i]) {
                 aux = aux + 1;
             }
         }
@@ -53,6 +53,13 @@ public class CalculaMedia {
     }
 
     public double calculaNumeroDeValoresAbaixoDaMedia(double[] vetor) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        menor = calculaMedia(vetor);
+        aux = 0;
+        for (i = 0; i < vetor.length; i++) {
+            if (menor > vetor[i]) {
+                aux = aux + 1;
+            }
+        }
+        return aux;
     }
 }

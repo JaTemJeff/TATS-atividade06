@@ -72,8 +72,8 @@ public class TDDatitidade06 {
    
    @Test
    public void testeNumeroDeValoresAbaixoDaMedia(){
-       double vetor[] = {1, 2, 3, 4};
+       double vetor[] = {1, 2, 3, 4, 1};
        double res = media.calculaNumeroDeValoresAbaixoDaMedia(vetor);
-       Assert.assertEquals(2, res, 0.1);
+       Assert.assertEquals(3, res, 0.1);
    }
 }

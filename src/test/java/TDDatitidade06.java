@@ -65,8 +65,8 @@ public class TDDatitidade06 {
    
    @Test 
    public void testeNumeroDeValoresAcimaDaMedia(){
-       double vetor[] = {1, 2, 3};
+       double vetor[] = {1, 2, 3, 4};
        double res = media.calculaNumeroDeValoresAcimaDaMedia(vetor);
-       Assert.assertEquals(1, res, 0.1);
+       Assert.assertEquals(2, res, 0.1);
    }
 }

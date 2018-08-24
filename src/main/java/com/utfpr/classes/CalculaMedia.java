@@ -42,6 +42,13 @@ public class CalculaMedia {
     }
 
     public double calculaNumeroDeValoresAcimaDaMedia(double[] vetor) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        maior = calculaMedia(vetor);
+        aux = 0;
+        for (i = 0; i < vetor.length; i++) {
+            if(maior < vetor[i]){
+                aux = aux + 1;
+            }
+        }
+        return aux;
     }
 }

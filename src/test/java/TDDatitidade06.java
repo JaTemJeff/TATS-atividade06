@@ -62,4 +62,11 @@ public class TDDatitidade06 {
        double res = media.calculaMenor(vetor);
        Assert.assertEquals(1, res, 0.1);
    }
+   
+   @Test 
+   public void testeNumeroDeValoresAcimaDaMedia(){
+       double vetor[] = {1, 2, 3};
+       double res = media.calculaNumeroDeValoresAcimaDaMedia(vetor);
+       Assert.assertEquals(1, res, 0.1);
+   }
 }

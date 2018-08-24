@@ -40,4 +40,8 @@ public class CalculaMedia {
         }
         return (float) menor;
     }
+
+    public double calculaNumeroDeValoresAcimaDaMedia(double[] vetor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

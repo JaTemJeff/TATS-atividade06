@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import com.utfpr.classes.CalculaDesvioPadrao;
 import com.utfpr.classes.MaioresEMenores;
 import com.utfpr.classes.CalculaMedia;
@@ -12,10 +6,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- *
- * @author Notebook
- */
 public class TDDatitidade06 {
 
     CalculaMediana mediana;

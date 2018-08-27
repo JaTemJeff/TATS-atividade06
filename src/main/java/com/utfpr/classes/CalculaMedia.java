@@ -16,11 +16,11 @@ public class CalculaMedia {
     double maior = 0;
     double menor = 100000000000000000000000000000000000d;
 
-    public float calculaMedia(double vetor[]) {
+    public double calculaMedia(double vetor[]) {
         for (i = 0; i < vetor.length; i++) {
             aux = vetor[i] + aux;
         }
-        return (float) (aux / vetor.length);
+        return (double) (aux / vetor.length);
     }
 
     public double calculaMaior(double vetor[]) {
@@ -29,7 +29,7 @@ public class CalculaMedia {
                 maior = vetor[i];
             }
         }
-        return (float) maior;
+        return (double) maior;
     }
 
     public double calculaMenor(double vetor[]) {
@@ -38,7 +38,7 @@ public class CalculaMedia {
                 menor = vetor[i];
             }
         }
-        return (float) menor;
+        return (double) menor;
     }
 
     public double calculaNumeroDeValoresAcimaDaMedia(double[] vetor) {
